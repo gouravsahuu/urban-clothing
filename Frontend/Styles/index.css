@@ -1,0 +1,80 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar style */
+#mainheader{
+    padding: 0;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+#keys{
+    display: flex;
+    align-items: center;
+}
+#keys p{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+#logo+div{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1000px;
+}
+#icons{
+    display: flex;
+    width: 220px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+}
+#logo{
+    margin-left: 20px;
+    width: 130px;
+    height: 80px;
+}
+#search,
+#user,
+#bag{
+    width: 35px;
+    height: 35px;
+}
+
+
+/* footer style */
+
+#footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#footer p{
+    font-weight:550;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#footer>div{
+    width: 23%;
+}
+#firstf input{
+   width: 90%;
+   border: 0.1px solid black;
+}
+.secondf p{
+   text-align: center;
+}
+#lastf p{
+    text-align: center;
+}
+#footer+hr+p{
+    font-size: 11px;
+    margin-left: 22px;
+}
+
