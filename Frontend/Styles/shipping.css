@@ -1,0 +1,102 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar section */
+#navbar{
+   display: flex;
+   width: 80%;
+   margin: auto;
+   justify-content: space-between;
+   align-items: center;
+}
+#navbar img{
+    display: block;
+}
+#navbar img:nth-child(1){
+    width: 50px;
+    height: 50px;
+}
+#navbar img:nth-child(2){
+    width: 130px;
+    height: 80px;
+}
+#navbar+hr+h5{
+    text-align: center;
+}
+
+/* shipping details */
+
+#shipping{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+#address{
+    width: 65%;
+}
+
+/* address details */
+
+#address-form input{
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding:10px
+}
+#address-form input:nth-child(10){
+    background-color: black;
+    color: white;
+}
+#address-form+p{
+    margin-left: 160px;
+}
+
+/* summary section */
+
+#summary{
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f6f6f6;
+}
+
+#summary>h5:nth-child(1){
+    text-align: center;
+}
+#summary>div{
+    display: flex;
+    justify-content: space-between;
+}
+#summary>button{
+    width: 100%;
+    display: block;
+    margin: auto;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#summary>div>div>img{
+    width: 80px;
+    height: 50px;
+}
+
+/* footer section */
+
+#footer{
+    display: flex;
+}
+#footer>div{
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#footer p{
+    font-size: 14px;
+}
+#footer>div img{
+    width: 60px;
+}
