@@ -1,6 +1,9 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+/* body{
+    background-color: red;
+} */
 /* navbar style */
 #mainheader{
     padding: 0;
@@ -46,62 +49,84 @@
     height: 35px;
 }
 
-/* top section */
-
-#top{
-    width: 30%;
-    margin: auto;
-    text-align: center;
+/* product section */
+#imageDiv{
+    background-color: #f6f6f6;
 }
-
-/* sort filter section */
-
-#sort-filter{
+#prod{
     display: flex;
-    width: 70%;
-    margin: auto;
-    justify-content: space-evenly;
 }
-#sort-filter select{
-    display: block;
-    border: none;
+#prod>div{
+    width: 50%;
 }
-
-/* mid section */
-
-#mid h3{
-   text-align: center;
+#details{
+    padding-left: 30px;
+    padding-right: 30px;
 }
-#mid+div{
-    display: flex;
-    width: 60%;
-    margin: auto;
-    margin-top: 130px;
-    justify-content: space-evenly;
+#details>p{
+    margin-top: 70px;
 }
-#mid+div img{
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin: auto;
-}
-#mid+div p{
+#details>div>p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
     font-size: 14px;
 }
-
-/* bottom section */
-
-#bottom div{
+#details>div>div>p{
+    font-weight: bold;
+    font-size: 14px;
+}
+#colorDiv{
     display: flex;
-    width: 70%;
-    margin: auto;
+    justify-content: space-evenly;
+    width:50%
+}
+#colorDiv img{
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+#sizeDiv{
+    display: flex;
     justify-content: space-evenly;
 }
-#bottom>h5{
-    text-align: center;
+#sizeDiv p{
+    border: 0.5px solid black;
+    padding:10px
 }
-#bottom div p{
-    font-size: 13px;
+#buttons{
+    display: flex;
+    justify-content: space-between;
+}
+#buttons button{
+    display: block;
+    width: 47%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#addtobag{
+    color: white;
+    background-color: black;
+}
+#addtobag+button{
+    border: 2px solid black;
+    background-color: white;
+}
+/* #buttons+hr+div{
+    
+} */
+#buttons+hr+div+div{
+    margin-top: 30px;
+}
+#buttons+hr+div p{
+    padding: 0;
+    margin: 0;
+    padding: 2px;
+}
+#buttons+hr+div+div p{
+    padding: 0;
+    margin: 0;
+    padding: 2px;
 }
 
 /* footer style */
