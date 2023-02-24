@@ -53,11 +53,21 @@
 }
 #payment>div>div{
     display: flex;
+    align-items: center;
+    height: 70px;
 }
 #payment>div img{
+    margin-left: 20px;
     display: block;
     width:100px;
 }
+#payment>div h4{
+    margin-left: 20px;
+}
+#payment>h5{
+    padding-top: 20px;
+}
+
 
 
 /* summary section */
@@ -70,6 +80,7 @@
 }
 
 #summary>h5:nth-child(1){
+    padding-top: 10px;
     text-align: center;
 }
 #summary>div{
@@ -87,4 +98,21 @@
 #summary>div>div>img{
     width: 80px;
     height: 50px;
+}
+
+/* footer section */
+
+#footer{
+    display: flex;
+}
+#footer>div{
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#footer p{
+    font-size: 14px;
+}
+#footer>div img{
+    width: 60px;
 }
