@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f6f6f6;
+}
+.main{
+    display: flex;
+    position: relative;
+}
+.side-section{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #303030;
+}
+.side-section p{
+    color: white;
+    font-size: 28px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.side-section ul{
+    margin-top: 60px;
+}
+.side-section li{
+    color: white;
+    font-size: 19px;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.side-section li:hover{
+    background-color: #a5a5a5;
+}
+.content-section{
+    margin-left: 320px;
+    margin-top: 30px;
+    width: 90%;
+}
+.content-section>div{
+    width: 40%;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+.content-section>div:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.content-section img{
+    width: 50px;
+    height: 50px;
+}
+.content-section>div>h2,
+.content-section>div>p{
+   margin-top: 25px;
+}
+
+#products-display{
+    background-color: #f2eae4;
+}
+#orders-display{
+    background-color: #e3e9f2;
+}
+#customers-display{
+    background-color: #eae0f0;
+}
+
+#prodStatus,#orderStatus,#userStatus{
+    font-size: 22px;
+    color: #1a4e8a;
+}
+#home:hover{
+    cursor: pointer;
+ }

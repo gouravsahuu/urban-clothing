@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Clothing | Admin Products</title>
+</head>
+<link rel="stylesheet" href="./Styles/adminProducts.css">
+<body>
+    <div class="main">
+        <div class="side-section">
+            <p id="home">Urban Clothing</p>
+            <p>Admin Panel</p>
+            <ul>
+               <li id="dashboard-page">Dashboard</li>
+               <li id="products-page">Products</li>
+               <li id="orders-page">Orders</li>
+               <li id="customers-page">Users</li>
+            </ul>
+        </div>
+        <div class="content-section">
+           <div class="top">
+              <div>
+                <h3>Products</h3>
+              </div>
+              <div class="add-delete">
+                <button id="add-prod">Add Product</button>
+                <button id="delete-prod">Delete Product</button>
+              </div>
+           </div>
+           <div class="rendering-div">
+               <table>
+                   <thead>
+                       <th>Product ID</th>
+                       <th>Product Image</th>
+                       <th>Name</th>
+                       <th>Category</th>
+                       <th>Price</th>
+                       <th>Availability</th>
+                       <th>Rating</th>
+                   </thead>
+                   <tbody id="tableBody"></tbody>
+               </table>
+           </div>
+        </div>
+   </div>
+</body>
+<script src="./Scripts/adminProducts.js"></script>
+</html>

@@ -1,0 +1,139 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* body{
+    background-color: red;
+} */
+/* navbar style */
+#mainheader{
+    padding: 0;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+#keys{
+    display: flex;
+    align-items: center;
+}
+#keys p{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+#logo+div{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1000px;
+}
+#icons{
+    display: flex;
+    width: 220px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+}
+#logo{
+    margin-left: 20px;
+    width: 130px;
+    height: 80px;
+}
+#search,
+#user,
+#bag{
+    width: 35px;
+    height: 35px;
+}
+#mainheader+h4{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+}
+
+/* login signup section */
+
+#login-register{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#login-register>div{
+    width:40%;
+    margin:auto;
+    background-color: #f6f6f6;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#login-register>div:nth-child(1){
+    margin-top: 0;
+}
+
+/* sigin in section */
+
+#signin>input{
+     display: block;
+     margin: auto;
+     padding: 10px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     width: 95%;
+}
+#signin>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#signin>div>input{
+    display: block;
+    padding: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: black;
+    color: white;
+}
+#signin p{
+    font-size: 12px;
+}
+#signin>p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* footer style */
+
+#footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#footer p{
+    font-weight:550;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#footer>div{
+    width: 23%;
+}
+#firstf input{
+   width: 90%;
+   border: 0.1px solid black;
+}
+.secondf p{
+   text-align: center;
+}
+#lastf p{
+    text-align: center;
+}
+#footer+hr+p{
+    font-size: 11px;
+    margin-left: 22px;
+}
+

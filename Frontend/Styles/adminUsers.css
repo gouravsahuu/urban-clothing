@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    display: flex;
+    position: relative;
+}
+.side-section{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #303030;
+}
+.side-section p{
+    color: white;
+    font-size: 28px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.side-section ul{
+    margin-top: 60px;
+}
+.side-section li{
+    color: white;
+    font-size: 19px;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.side-section li:hover{
+    background-color: #a5a5a5;
+}
+
+
+.content-section{
+    margin-left: 330px;
+    margin-top: 50px;
+    width: 75%;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9fafb;
+}
+.rendering-div table{
+    width: 100%;
+}
+.top h3{
+    margin-left: 30px;
+}
+.add-delete{
+    margin-right: 30px;
+}
+.add-delete button{
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #1a4e8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.add-delete button:hover{
+    background-color: #264669;
+}
+.rendering-div{
+    margin-top: 50px;
+    background-color: #f9fafb;
+}
+#home:hover{
+    cursor: pointer;
+ }
+#tbody{
+    text-align: center;
+}
