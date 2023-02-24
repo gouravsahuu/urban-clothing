@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    display: flex;
+    position: relative;
+}
+.side-section{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #303030;
+}
+.side-section p{
+    color: white;
+    font-size: 28px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.side-section ul{
+    margin-top: 60px;
+}
+.side-section li{
+    color: white;
+    font-size: 19px;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.side-section li:hover{
+    background-color: #a5a5a5;
+}
+.main-content-section{
+    margin-left: 470px;
+    margin-top: 150px;
+    display: flex;
+    width: 900px;
+    height: 500px;
+}
+.content-section{
+    width: 420px;
+    height: 480px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.content-section>div{
+    display: flex;
+    width: 350px;
+    margin: auto;
+    margin-top: 20px;
+}
+.content-section>h3{
+    text-align: center;
+    margin-top: 20px;
+}
+.content-section form{
+    width: 100%;
+}
+.content-section>div input,
+.content-section>div select{
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 0.1px solid black;
+    border-radius: 5px;
+}
+.content-section+div{
+    /* display: flex; */
+    margin: auto;
+    width: 400px;
+    height: 480px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.content-section+div h3{
+    margin-top: 20px;
+    text-align: center;
+}
+.content-section+div form{
+    width: 100%;
+}
+.content-section+div input{
+    display: block;
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    border: 0.1px solid black;
+    border-radius: 5px;
+}
+.content-section+div input:nth-child(1){
+    margin-top: 140px;
+}
+
+#add,
+#delete-btn{
+    border: none;
+    background-color: #303030;
+    color: white;
+}
+#home:hover{
+   cursor: pointer;
+}
+
+
