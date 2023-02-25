@@ -135,3 +135,42 @@
     margin-left: 22px;
 }
 
+/* products section */
+
+#mensProd{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.mainDiv img{
+    width: 100%;
+}
+.mainDiv h5{
+    text-align: center;
+}
+.mainDiv p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+    font-size: 14px;
+}
+.mainDiv p:nth-child(5){
+    color: green;
+}
+.mainDiv button{
+    display: block;
+    margin: auto;
+    color: #1a4e8a;
+    border: 2px solid #1a4e8a;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.mainDiv button:hover{
+    background-color: #1a4e8a;
+    color: white;
+}
