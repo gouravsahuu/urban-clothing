@@ -4,7 +4,8 @@
   "description": "This is a backend server for a fashion e-commerce website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server":"nodemon index.js"
   },
   "keywords": [],
   "author": "Gourav Sahu",

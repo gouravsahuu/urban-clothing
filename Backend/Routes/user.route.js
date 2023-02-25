@@ -6,12 +6,12 @@ const {UserModel} = require("../Models/user.model");
 const userRoute = express.Router();
 
 userRoute.post("/register",async (req,res) => {
-    const {name,email,gender,password,age,city} = req.body;
+    const {name,email,gender,password,phone_number} = req.body;
     try{
         const existingUser = await UserModel.find({email});
         if(existingUser.length == 0){
             bcrypt.hash(password, 5, async (err,hash) => {
-                const user = new UserModel({name,email,gender,age,city,password:hash});
+                const user = new UserModel({name,email,gender,phone_number,password:hash});
                 await user.save();
                 res.send({"message":"User registered Successfully"});
             })
