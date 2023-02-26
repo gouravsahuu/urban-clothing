@@ -9,19 +9,19 @@
 </head>
 <body>
     <nav id="navbar">
-        <img src="./Images/back.png" alt="Back">
-        <img src="./Images/logo.png" alt="Urban Clothing">
-        <h5>User-<span></span></h5>
+        <img id="back" src="./Images/back.png" alt="Back">
+        <img id="logo" src="./Images/logo.png" alt="Urban Clothing">
+        <h5 id="user">User-<span id="username"></span></h5>
     </nav>
     <hr>
-    <h5>You have (<span></span>) Item in your Shopping Bag</h5>
+    <h5>You have (<span id="noofitem"></span>) Item in your Shopping Bag</h5>
     <div id="bagdetails">
         <div id="products"></div>
         <div id="summary">
             <h5>Your Order Summary</h5>
             <div>
                 <p>Subtotal</p>
-                <p>1000</p>
+                <p id="subtotal"></p>
             </div>
             <div>
                 <p>Estimated Shipping</p>
@@ -34,9 +34,9 @@
             <hr>
             <div>
                 <p>Total</p>
-                <p>1000</p>
+                <p id="total"></p>
             </div>
-            <button>Checkout</button>
+            <button id="checkout">Checkout</button>
             <h5>Urban Clothing Accepts</h5>
             <div>
                 <div>

@@ -160,3 +160,7 @@
     margin-left: 22px;
 }
 
+#imageDiv img{
+    width: 100%;
+}
+

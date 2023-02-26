@@ -116,3 +116,36 @@
 #footer>div img{
     width: 60px;
 }
+
+.mainDiv{
+    display: flex;
+}
+.imgDiv{
+    width: 40%;
+}
+.imgDiv img{
+    width: 100%;
+}
+.sideDiv{
+    padding-left: 20px;
+}
+.quanDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.quanDiv button{
+    display: block;
+}
+.dltbtn{
+    margin-top: 20px;
+    width: 200px;
+    padding: 5px;
+    color: #1a4e8a;
+    border: 2px solid #1a4e8a;
+    background-color: white;
+}
+.dltbtn:hover{
+    background-color: #1a4e8a;
+    color: white;
+}

@@ -9,14 +9,14 @@
 </head>
 <body>
     <nav id="navbar">
-        <img src="./Images/back.png" alt="Back">
-        <img src="./Images/logo.png" alt="Urban Clothing">
-        <h5>User-<span></span></h5>
+        <img id="back" src="./Images/back.png" alt="Back">
+        <img id="logo" src="./Images/logo.png" alt="Urban Clothing">
+        <h5>User-<span id="username"></span></h5>
     </nav>
     <hr>
     <h5>Review Your Order & Pay</h5>
     <div id="main">
-        <div id="review"></div>
+        <div id="products"></div>
         <div class="side">
             <div id="payment">
                 <h5>How would you like to Pay?</h5>
@@ -51,7 +51,7 @@
                 <h5>Your Order Summary</h5>
             <div>
                 <p>Subtotal</p>
-                <p>1000</p>
+                <p id="subtotal"></p>
             </div>
             <div>
                 <p>Estimated Shipping</p>
@@ -59,14 +59,14 @@
             </div>
             <div>
                 <p>Tax</p>
-                <p>Calculated at Payment Page</p>
+                <p>18% GST</p>
             </div>
             <hr>
             <div>
                 <p>Total</p>
-                <p>1000</p>
+                <p id="total"></p>
             </div>
-            <button>Place Order</button>
+            <button id="placeOrder">Place Order</button>
             <h5>Urban Clothing Accepts</h5>
             <div>
                 <div>
