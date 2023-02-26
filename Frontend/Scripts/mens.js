@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:4500";
+const baseURL = "https://lucky-ruby-puffer.cyclic.app";
 const prodDiv = document.getElementById("mensProd");
 const logo = document.getElementById("logo");
 const user = document.getElementById("user");
@@ -192,27 +192,35 @@ function addToCart (element) {
         id:element._id,
         quantity:1
     }
-    if(cartItem.length == 0){
-        cartItem.push(obj);
-        localStorage.setItem("cartItem",JSON.stringify(cartItem));
-        alert("Product added to Cart");
+    let token = localStorage.getItem("token");
+    if(token == undefined || token == "" || token == null){
+        alert("Please Login first !!");
+        window.location = "../signin.html";
     }
     else{
-        let flag = true;
-        for(let i=0;i<cartItem.length;i++){
-            if(cartItem[i].id == element._id){
-                flag = false;
-            }
-        }
-        if(flag){
+        if(cartItem.length == 0){
             cartItem.push(obj);
             localStorage.setItem("cartItem",JSON.stringify(cartItem));
             alert("Product added to Cart");
         }
         else{
-            alert("Product already in Cart");
+            let flag = true;
+            for(let i=0;i<cartItem.length;i++){
+                if(cartItem[i].id == element._id){
+                    flag = false;
+                }
+            }
+            if(flag){
+                cartItem.push(obj);
+                localStorage.setItem("cartItem",JSON.stringify(cartItem));
+                alert("Product added to Cart");
+            }
+            else{
+                alert("Product already in Cart");
+            }
         }
     }
+    
 }
 
 

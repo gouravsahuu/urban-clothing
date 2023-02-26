@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:4500";
+const baseURL = "https://lucky-ruby-puffer.cyclic.app";
 let add = document.getElementById("add-prod");
 let del = document.getElementById("delete-prod");
 let dashboard = document.getElementById("dashboard-page");

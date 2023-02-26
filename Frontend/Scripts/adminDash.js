@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:4500";
+const baseURL = "https://lucky-ruby-puffer.cyclic.app";
 
 let orders = document.getElementById("orders-page");
 let customers = document.getElementById("customers-page");
