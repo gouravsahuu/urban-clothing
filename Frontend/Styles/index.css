@@ -81,3 +81,43 @@
     margin-left: 22px;
 }
 
+
+/* slideshow images */
+
+#slideDiv{
+    width: 100%;
+}
+#slideDiv img{
+    width: 100%;
+}
+#midImg{
+    display: flex;
+}
+#midImg div{
+    width: 50%;
+    background-color: #eaeaea;
+}
+#midImg img{
+    width: 100%;
+}
+#midImg h1{
+    text-align: center;
+}
+#midImg+div>img{
+    width: 100%;
+}
+#midImg+div+div>img{
+    width: 100%;
+}
+#mid{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#mid h3{
+    text-align: center;
+}
+#mensPage:hover,
+#user:hover,
+#bag:hover{
+    cursor: pointer;
+}

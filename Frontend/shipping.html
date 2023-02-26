@@ -9,9 +9,9 @@
 </head>
 <body>
     <nav id="navbar">
-        <img src="./Images/back.png" alt="Back">
-        <img src="./Images/logo.png" alt="Urban Clothing">
-        <h5>User-<span></span></h5>
+        <img id="back" src="./Images/back.png" alt="Back">
+        <img id="logo" src="./Images/logo.png" alt="Urban Clothing">
+        <h5>User-<span id="username"></span></h5>
     </nav>
     <hr>
     <h5>Shipping Details</h5>
@@ -19,14 +19,14 @@
         <div id="address">
             <h5>Where would you like your parcel to be delivered?</h5>
             <form id="address-form">
-                <input type="text" placeholder="Enter Full Name">
-                <input type="number" placeholder="Enter Phone Number">
-                <input type="number" placeholder="Flat/House Number">
-                <input type="text" placeholder="Address Line">
-                <input type="text" placeholder="Landmark">
-                <input type="text" placeholder="City">
-                <input type="text" placeholder="State">
-                <input type="number" placeholder="Zipcode">
+                <input id="name" type="text" placeholder="Enter Full Name">
+                <input id="num" type="number" placeholder="Enter Phone Number">
+                <input id="house" type="number" placeholder="Flat/House Number">
+                <input id="addline" type="text" placeholder="Address Line">
+                <input id="landmark" type="text" placeholder="Landmark">
+                <input id="city" type="text" placeholder="City">
+                <input id="state" type="text" placeholder="State">
+                <input id="zip" type="number" placeholder="Zipcode">
                 <input type="submit" value="Save Address">
             </form>
             <p>**All Fields are Required</p>
@@ -35,7 +35,7 @@
             <h5>Your Order Summary</h5>
             <div>
                 <p>Subtotal</p>
-                <p>1000</p>
+                <p id="subtotal"></p>
             </div>
             <div>
                 <p>Estimated Shipping</p>
@@ -48,9 +48,9 @@
             <hr>
             <div>
                 <p>Total</p>
-                <p>1000</p>
+                <p id="total"></p>
             </div>
-            <button>Review & Proceed to Pay</button>
+            <button id="reviewandpay">Review & Proceed to Pay</button>
             <h5>Urban Clothing Accepts</h5>
             <div>
                 <div>

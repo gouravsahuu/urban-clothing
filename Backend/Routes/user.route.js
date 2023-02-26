@@ -25,6 +25,11 @@ userRoute.post("/register",async (req,res) => {
     }
 })
 
+userRoute.get("/all",async(req,res) => {
+    const allUsers = await UserModel.find();
+    res.send(allUsers);
+})
+
 userRoute.post("/login",async (req,res) => {
      const userDetail = req.body;
      try{
@@ -33,7 +38,7 @@ userRoute.post("/login",async (req,res) => {
             bcrypt.compare(userDetail.password, user[0].password, (err,result) => {
                 if(result){
                     const token = jwt.sign({userID:user[0]._id},"somekey",{expiresIn: '1h'});
-                    res.send({"message":"Log-In Success","token":token,"help":"You can use this token to access protected routes"});
+                    res.send({"message":"Log-In Success","token":token,"help":"You can use this token to access protected routes","username":`${user[0].name}`});
                 }
                 else{
                     res.send({"message":"Login Failed, Invalid Credentials"});
