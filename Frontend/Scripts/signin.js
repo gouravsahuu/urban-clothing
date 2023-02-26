@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:4500";
+const baseURL = "https://lucky-ruby-puffer.cyclic.app";
 const register = document.getElementById("register");
 const sign = document.getElementById("signin");
 
