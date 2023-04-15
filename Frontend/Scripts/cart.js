@@ -17,13 +17,25 @@ logo.addEventListener("click",() => {
     window.location = "../index.html"
 })
 user.addEventListener("click",() => {
-    window.location = "../signin.html";
+    let loginCheck = localStorage.getItem("username");
+    if(loginCheck != undefined){
+        window.location = "../myaccount.html";
+    }
+    else{
+        window.location = "../signin.html";
+    }
 })
 back.addEventListener("click",() => {
     window.location = "../mens.html";
 })
 checkout.addEventListener("click",() => {
-    window.location = "../shipping.html";
+    let itemCheck = JSON.parse(localStorage.getItem("cartItem"));
+    if(itemCheck != undefined){
+        window.location = "../shipping.html";
+    }
+    else{
+        alert("Please add items to your shopping bag !!");
+    }
 })
 
 window.addEventListener("load",() => {

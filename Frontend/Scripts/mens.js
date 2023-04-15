@@ -16,12 +16,25 @@ logo.addEventListener("click",() => {
     window.location = "../index.html"
 })
 user.addEventListener("click",() => {
-    window.location = "../signin.html";
+    let loginCheck = localStorage.getItem("username");
+    if(loginCheck != undefined){
+        window.location = "../myaccount.html";
+    }
+    else{
+        window.location = "../signin.html";
+    }
 })
 bag.addEventListener("click",() => {
     window.location = "../cart.html";
 })
 window.addEventListener("load",fetchProd);
+
+window.addEventListener("load",() => {
+    let signedInUser = localStorage.getItem("username");
+    if(signedInUser != undefined){
+        user.setAttribute("title",signedInUser);
+    }
+});
 
 //sort by price
 

@@ -36,6 +36,13 @@
     width: 65%;
 }
 
+/* saved address */
+
+#savedAdd{
+    background-color: #f6f6f6;
+    padding: 20px;
+}
+
 /* address details */
 
 #address-form input{

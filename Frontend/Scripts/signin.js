@@ -10,7 +10,7 @@ const bag = document.getElementById("bag");
 const home = document.getElementById("logo");
 
 mensPage.addEventListener("click",() => {
-    window.location = "../mens.html"
+    window.location = "../mens.html";
 })
 user.addEventListener("click",() => {
     window.location = "../signin.html";
@@ -46,6 +46,7 @@ sign.addEventListener("submit",(e) => {
                 alert(data.message);
                 localStorage.setItem("token",data.token);
                 localStorage.setItem("username",data.username);
+                localStorage.setItem("user_ID",data.userID);
                 window.location = "../index.html";
             }
         })

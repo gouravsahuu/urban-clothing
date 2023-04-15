@@ -4,10 +4,14 @@ const username = document.getElementById("username");
 let subtotal = document.getElementById("subtotal");
 let total = document.getElementById("total");
 const address = document.getElementById("address-form");
+let addDiv = document.getElementById("address");
 let review = document.getElementById("reviewandpay");
+let savedAdd = document.getElementById("savedAdd");
+
+savedAdd.hidden = true;
 
 logo.addEventListener("click",() => {
-    window.location = "../index.html"
+    window.location = "../index.html";
 })
 back.addEventListener("click",() => {
     window.location = "../mens.html";
@@ -45,8 +49,49 @@ address.addEventListener("submit",(e) => {
     }
     localStorage.setItem("user-address",JSON.stringify(obj));
     alert("Address Saved");
+    addDiv.hidden = true;
+    savedAdd.hidden = false;
+    savedAdd.innerHTML = "";
+
+    let userAdd = JSON.parse(localStorage.getItem("user-address"));
+
+    let head = document.createElement("h5");
+    head.innerText = "Saved Address";
+
+    let name = document.createElement("p");
+    name.innerText = `Name :- ${userAdd.name}`;
+
+    let number = document.createElement("p");
+    number.innerText = `Phone no. :- ${userAdd.number}`;
+
+    let addLine = document.createElement("p");
+    addLine.innerText = `Address Line :- ${userAdd.addline}`;
+
+    let houseno = document.createElement("p");
+    houseno.innerText = `House no. :- ${userAdd.houseno}`;
+
+    let landMark = document.createElement("p");
+    landMark.innerText = `Landmark :- ${userAdd.landmark}`;
+
+    let city = document.createElement("p");
+    city.innerText = `City :- ${userAdd.city}`;
+
+    let zip = document.createElement("p");
+    zip.innerText = `Zip :- ${userAdd.zip}`;
+
+    let state = document.createElement("p");
+    state.innerText = `State :- ${userAdd.state}`;
+
+    savedAdd.append(head,name,number,addLine,houseno,landMark,city,zip,state);
+
 })
 
 review.addEventListener("click",() => {
-    window.location = "../review_pay.html";
+    let addCheck = JSON.parse(localStorage.getItem("user-address"));
+    if(addCheck != undefined){
+        window.location = "../review_pay.html";
+    }
+    else{
+        alert("Please enter your address first !!");
+    }
 })

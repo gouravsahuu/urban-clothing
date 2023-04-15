@@ -7,6 +7,7 @@ let prodStatus = document.getElementById("prodStatus");
 let orderStatus = document.getElementById("orderStatus");
 let userStatus = document.getElementById("userStatus");
 let home = document.getElementById("home");
+let logout = document.getElementById("logout");
 
 let userOrders = JSON.parse(localStorage.getItem("userorder")) || [];
 
@@ -22,6 +23,9 @@ orders.addEventListener("click",() => {
 })
 customers.addEventListener("click",() => {
     window.location = "../adminUsers.html";
+})
+logout.addEventListener("click",() => {
+    window.location = "../index.html";
 })
 
 let num;

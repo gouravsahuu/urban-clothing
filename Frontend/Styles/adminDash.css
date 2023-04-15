@@ -37,6 +37,13 @@ body{
 .side-section li:hover{
     background-color: #a5a5a5;
 }
+#logout{
+    margin-top: 290px;
+    font-size: 22px;
+}
+#logout:hover{
+    cursor:pointer;
+}
 .content-section{
     margin-left: 320px;
     margin-top: 30px;

@@ -8,7 +8,13 @@ mensPage.addEventListener("click",() => {
     window.location = "../mens.html"
 })
 user.addEventListener("click",() => {
-    window.location = "../signin.html";
+    let loginCheck = localStorage.getItem("username");
+    if(loginCheck != undefined){
+        window.location = "../myaccount.html";
+    }
+    else{
+        window.location = "../signin.html";
+    }
 })
 bag.addEventListener("click",() => {
     window.location = "../cart.html";
@@ -16,6 +22,18 @@ bag.addEventListener("click",() => {
 mensPage0.addEventListener("click",() => {
     window.location = "../mens.html"
 })
+
+// let loginCheck = localStorage.getItem("username");
+// if(loginCheck != undefined){
+//     user.addEventListener("click",() => {
+//         window.location = "../signin.html";
+//     })
+// }
+// else{
+//     user.addEventListener("click",() => {
+//         window.location = "../signin.html";
+//     })
+// }
 
 let images = ["../Images/show-10.png",
               "../Images/show-6.webp",
@@ -38,5 +56,12 @@ setInterval(() => {
     }
 },3000);
 
+
+window.addEventListener("load",() => {
+    let signedInUser = localStorage.getItem("username");
+    if(signedInUser != undefined){
+        user.setAttribute("title",signedInUser);
+    }
+});
 
 
