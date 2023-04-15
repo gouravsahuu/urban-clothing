@@ -8,8 +8,6 @@ let addDiv = document.getElementById("address");
 let review = document.getElementById("reviewandpay");
 let savedAdd = document.getElementById("savedAdd");
 
-savedAdd.hidden = true;
-
 logo.addEventListener("click",() => {
     window.location = "../index.html";
 })
@@ -35,6 +33,19 @@ window.addEventListener("load",() => {
    }
 })
 
+window.addEventListener("load",() => {
+    let addressCheck = JSON.parse(localStorage.getItem("user-address"));
+    if(addressCheck != undefined){
+        addDiv.hidden = true;
+        savedAdd.hidden = false;
+        renderAddress();
+    }
+    else{
+        addDiv.hidden = false;
+        savedAdd.hidden = true;
+    }
+})
+
 address.addEventListener("submit",(e) => {
     e.preventDefault();
     let obj = {
@@ -51,6 +62,21 @@ address.addEventListener("submit",(e) => {
     alert("Address Saved");
     addDiv.hidden = true;
     savedAdd.hidden = false;
+    renderAddress();
+})
+
+review.addEventListener("click",() => {
+    let addCheck = JSON.parse(localStorage.getItem("user-address"));
+    if(addCheck != undefined){
+        window.location = "../review_pay.html";
+    }
+    else{
+        alert("Please enter your address first !!");
+    }
+})
+
+function renderAddress() {
+
     savedAdd.innerHTML = "";
 
     let userAdd = JSON.parse(localStorage.getItem("user-address"));
@@ -83,15 +109,4 @@ address.addEventListener("submit",(e) => {
     state.innerText = `State :- ${userAdd.state}`;
 
     savedAdd.append(head,name,number,addLine,houseno,landMark,city,zip,state);
-
-})
-
-review.addEventListener("click",() => {
-    let addCheck = JSON.parse(localStorage.getItem("user-address"));
-    if(addCheck != undefined){
-        window.location = "../review_pay.html";
-    }
-    else{
-        alert("Please enter your address first !!");
-    }
-})
+}
